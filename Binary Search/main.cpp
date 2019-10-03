@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int binarySearch(int *arr,int sz,int ele,int s=0,int e=-2){
-    if(e==-2)
+int binarySearch(int *arr,int sz,int ele,int s=0,int e=-5){
+    if(e==-5)
         e=sz-1;
     if(s<=e){
         int mid=(int)((s+e)/2);
