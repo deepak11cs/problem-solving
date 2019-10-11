@@ -8,9 +8,9 @@ int binarySearch(int *arr,int sz,int ele,int s=0,int e=-5){
     if(s<=e){
         int mid=(int)((s+e)/2);
         if(arr[mid]>ele)
-            return binarySearch(arr,sz,ele,s,mid-1);
+            return BinarySearch(arr,sz,ele,s,mid-1);
         else if(arr[mid]<ele)
-            return binarySearch(arr,sz,ele,mid+1,e);
+            return BinarySearch(arr,sz,ele,mid+1,e);
         else
             return mid;
     }
@@ -28,7 +28,7 @@ int main()
     ele=new int[cs];
     for(int i=0;i<cs;++i){
         cin>>ele[i];
-        cout<<binarySearch(arr,sz,ele[i])<<endl;
+        cout<<BinarySearch(arr,sz,ele[i])<<endl;
     }
     return 0;
 }
